@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root{
+
+    --yellow-one: rgba(209, 149, 39, 0.247);
+    --yellow-two: rgba(209, 138, 7, 0.247);
+    --yellow-tree: rgba(209, 138, 7, 0.664);
+    --standard-black: black;
+    --secondary-black: rgba(20, 20, 20, 0.829);
+    --standard-border: 1px solid #fff;
+    --standard-width: 100vw;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace, sans-serif;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body{
+    background-color: var(--standard-black);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--standard-width);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--standard-black);
+    border: var(--standard-border);
+}
+
+.logo{
+    margin: 15px;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+header a{
+    font-size: 22px;
+}
+
+header i{
+    font-size: 20px;
+    gap: 4px;
+    padding: 7px;
+    margin-right: 5px;
+}
+
+.navbar a:hover{
+    padding: 5px;
+    background-color: var(--yellow-one);
+    border-radius: 3px;
+    transform: scale(1.2);
+    justify-content: center;
+}
+
+.icons{
+
+}
+
+.icons i:hover{
+    background-color: var(--yellow-two);
+    border-radius: 5px;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    margin-top: 101px;
+    width: var(--standard-width);
+    height: 500px;
+    background-image: url("../img/home-img.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.home-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+.home-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    border-radius: 4px;
+    background-color: var(--secondary-black);
+    background-size:cover;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin: 15px;
+    height: 500px;
+    border: var(--standard-border);
+}
+
+.about img{
+    width: 45%;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.about-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.about p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 300px;
+    border-radius: 4px;
+}
